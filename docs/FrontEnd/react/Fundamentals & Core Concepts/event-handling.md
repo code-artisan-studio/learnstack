@@ -457,10 +457,10 @@ For an input that should submit when Enter is pressed, a semantic `<form onSubmi
 
 ## Sources
 
-[1] Responding to Events https://react.dev/learn/responding-to-events
-[2] Adding Interactivity https://react.dev/learn/adding-interactivity
-[3] State as a Snapshot https://react.dev/learn/state-as-a-snapshot
-[4] Queueing a Series of State Updates https://react.dev/learn/queueing-a-series-of-state-updates
-[5] Separating Events from Effects https://react.dev/learn/separating-events-from-effects
-[6] 回應Event https://zh-hant.react.dev/learn/responding-to-events
-[7] Menanggapi Event https://id.react.dev/learn/responding-to-events
+1. Responding to Events https://react.dev/learn/responding-to-events
+2. Adding Interactivity https://react.dev/learn/adding-interactivity
+3. State as a Snapshot https://react.dev/learn/state-as-a-snapshot
+4. Queueing a Series of State Updates https://react.dev/learn/queueing-a-series-of-state-updates
+5. Separating Events from Effects https://react.dev/learn/separating-events-from-effects
+6. 回應Event https://zh-hant.react.dev/learn/responding-to-events
+7. Menanggapi Event https://id.react.dev/learn/responding-to-events

@@ -452,12 +452,12 @@ A giant component becomes hard to test, reuse, and reason about. Extract a compo
 
 ## Sources
 
-[1] Components and Props https://legacy.reactjs.org/docs/components-and-props.html
-[2] State: A Component's Memory https://react.dev/learn/state-a-components-memory
-[3] React Fundamentals https://reactnative.dev/docs/intro-react
-[4] Sharing State Between Components https://react.dev/learn/sharing-state-between-components
-[5] What is the difference between state and props in React? https://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react
-[6] React.Component https://legacy.reactjs.org/docs/react-component.html
-[7] Basics of State and Props in React (2020 edition) https://chenhuijing.com/blog/state-and-props-in-react/
-[8] 05 - Understanding React Components - What are States https://www.youtube.com/watch?v=GgurJ_3y0Jg
-[9] React Class Components https://www.w3schools.com/react/react_class.asp
+1. Components and Props https://legacy.reactjs.org/docs/components-and-props.html
+2. State: A Component's Memory https://react.dev/learn/state-a-components-memory
+3. React Fundamentals https://reactnative.dev/docs/intro-react
+4. Sharing State Between Components https://react.dev/learn/sharing-state-between-components
+5. What is the difference between state and props in React? https://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react
+6. React.Component https://legacy.reactjs.org/docs/react-component.html
+7. Basics of State and Props in React (2020 edition) https://chenhuijing.com/blog/state-and-props-in-react/
+8. 05 - Understanding React Components - What are States https://www.youtube.com/watch?v=GgurJ_3y0Jg
+9. React Class Components https://www.w3schools.com/react/react_class.asp

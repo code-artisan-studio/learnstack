@@ -1,7 +1,7 @@
 yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
+  name: Dharshan Kesavan
+  title: Founder Learnstack
+  url: https://linkedin.com/in/dharshankesavan
   image_url: https://github.com/yangshun.png
   page: true
   socials:
@@ -17,7 +17,7 @@ slorber:
   image_url: https://github.com/slorber.png
   page:
     # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+    permalink: "/all-sebastien-lorber-articles"
   socials:
     x: sebastienlorber
     linkedin: sebastienlorber

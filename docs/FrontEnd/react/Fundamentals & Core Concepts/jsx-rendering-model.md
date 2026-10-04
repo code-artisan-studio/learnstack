@@ -417,12 +417,12 @@ The escape hatch, `dangerouslySetInnerHTML`, should be used only with trusted or
 
 ## Sources
 
-[1] Introducing JSX - React https://legacy.reactjs.org/docs/introducing-jsx.html
-[2] Rendering Elements - React https://legacy.reactjs.org/docs/rendering-elements.html
-[3] Quick Start - React https://react.dev/learn
-[4] Documentation - JSX - TypeScript https://www.typescriptlang.org/docs/handbook/jsx.html
-[5] Getting started with React - Learn web development | MDN https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries/React_getting_started
-[6] The React Handbook for Beginners – JSX, Hooks, and Rendering ... https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/
-[7] Is it possible to use if...else... statement in React render function? https://stackoverflow.com/questions/40477245/is-it-possible-to-use-if-else-statement-in-react-render-function
-[8] Demystifying React: How does React actually render JSX? https://dev.to/joe_jngigi/demystifying-react-how-does-react-actually-render-jsx-3099
-[9] React Conditional Rendering - W3Schools https://www.w3schools.com/react/react_conditional_rendering.asp
+1. Introducing JSX - React https://legacy.reactjs.org/docs/introducing-jsx.html
+2. Rendering Elements - React https://legacy.reactjs.org/docs/rendering-elements.html
+3. Quick Start - React https://react.dev/learn
+4. Documentation - JSX - TypeScript https://www.typescriptlang.org/docs/handbook/jsx.html
+5. Getting started with React - Learn web development | MDN https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries/React_getting_started
+6. The React Handbook for Beginners – JSX, Hooks, and Rendering ... https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/
+7. Is it possible to use if...else... statement in React render function? https://stackoverflow.com/questions/40477245/is-it-possible-to-use-if-else-statement-in-react-render-function
+8. Demystifying React: How does React actually render JSX? https://dev.to/joe_jngigi/demystifying-react-how-does-react-actually-render-jsx-3099
+9. React Conditional Rendering - W3Schools https://www.w3schools.com/react/react_conditional_rendering.asp

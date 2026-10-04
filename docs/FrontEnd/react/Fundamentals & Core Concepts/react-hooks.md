@@ -658,13 +658,13 @@ These are valuable in specific architectures, but most React components begin wi
 
 ## Sources
 
-[1] Built-in React Hooks https://react.dev/reference/react/hooks
-[2] useEffect https://react.dev/reference/react/useEffect
-[3] useState https://react.dev/reference/react/useState
-[4] useCallback https://react.dev/reference/react/useCallback
-[5] useMemo https://react.dev/reference/react/useMemo
-[6] useReducer https://react.dev/reference/react/useReducer
-[7] useContext https://react.dev/reference/react/useContext
-[8] useRef https://react.dev/reference/react/useRef
-[9] useLayoutEffect https://react.dev/reference/react/useLayoutEffect
-[10] useEffectEvent https://react.dev/reference/react/useEffectEvent
+1. Built-in React Hooks https://react.dev/reference/react/hooks
+2. useEffect https://react.dev/reference/react/useEffect
+3. useState https://react.dev/reference/react/useState
+4. useCallback https://react.dev/reference/react/useCallback
+5. useMemo https://react.dev/reference/react/useMemo
+6. useReducer https://react.dev/reference/react/useReducer
+7. useContext https://react.dev/reference/react/useContext
+8. useRef https://react.dev/reference/react/useRef
+9. useLayoutEffect https://react.dev/reference/react/useLayoutEffect
+10. useEffectEvent https://react.dev/reference/react/useEffectEvent

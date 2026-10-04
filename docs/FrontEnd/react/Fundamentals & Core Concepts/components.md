@@ -460,12 +460,12 @@ function useMousePosition() {
 
 ## Sources
 
-[1] Your First Component https://react.dev/learn/your-first-component
-[2] Component https://react.dev/reference/react/Component
-[3] Server Components https://react.dev/reference/rsc/server-components
-[4] 'use client' directive https://react.dev/reference/rsc/use-client
-[5] React https://react.dev/
-[6] React calls Components and Hooks https://react.dev/reference/rules/react-calls-components-and-hooks
-[7] Server Functions https://react.dev/reference/rsc/server-functions
-[8] Thinking in React https://react.dev/learn/thinking-in-react
-[9] 'use server' directive https://react.dev/reference/rsc/use-server
+1. Your First Component https://react.dev/learn/your-first-component
+2. Component https://react.dev/reference/react/Component
+3. Server Components https://react.dev/reference/rsc/server-components
+4. 'use client' directive https://react.dev/reference/rsc/use-client
+5. React https://react.dev/
+6. React calls Components and Hooks https://react.dev/reference/rules/react-calls-components-and-hooks
+7. Server Functions https://react.dev/reference/rsc/server-functions
+8. Thinking in React https://react.dev/learn/thinking-in-react
+9. 'use server' directive https://react.dev/reference/rsc/use-server

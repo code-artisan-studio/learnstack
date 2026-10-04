@@ -526,11 +526,11 @@ Why it is correct:
 
 ## Sources
 
-[1] Rendering Lists https://react.dev/learn/rendering-lists
-[2] Conditional Rendering https://react.dev/learn/conditional-rendering
-[3] Updating Arrays in State https://react.dev/learn/updating-arrays-in-state
-[4] Preserving and Resetting State https://react.dev/learn/preserving-and-resetting-state
-[5] You Might Not Need an Effect https://react.dev/learn/you-might-not-need-an-effect
-[6] Describing the UI https://he.react.dev/learn/describing-the-ui
-[7] Choosing the State Structure https://react.dev/learn/choosing-the-state-structure
-[8] Lifecycle of Reactive Effects https://react.dev/learn/lifecycle-of-reactive-effects
+1. Rendering Lists https://react.dev/learn/rendering-lists
+2. Conditional Rendering https://react.dev/learn/conditional-rendering
+3. Updating Arrays in State https://react.dev/learn/updating-arrays-in-state
+4. Preserving and Resetting State https://react.dev/learn/preserving-and-resetting-state
+5. You Might Not Need an Effect https://react.dev/learn/you-might-not-need-an-effect
+6. Describing the UI https://he.react.dev/learn/describing-the-ui
+7. Choosing the State Structure https://react.dev/learn/choosing-the-state-structure
+8. Lifecycle of Reactive Effects https://react.dev/learn/lifecycle-of-reactive-effects

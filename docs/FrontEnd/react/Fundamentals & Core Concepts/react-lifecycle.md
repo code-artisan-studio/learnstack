@@ -321,11 +321,11 @@ This is useful when changing to a different record should deliberately reset for
 
 ## Sources
 
-[1] React.Component https://legacy.reactjs.org/docs/react-component.html
-[2] State and Lifecycle - React https://legacy.reactjs.org/docs/state-and-lifecycle.html
-[3] React Lifecycle - W3Schools https://www.w3schools.com/react/react_lifecycle.asp
-[4] React Component Lifecycle: A Deep Dive for Beginners https://www.fullstackfoundations.com/blog/react-component-lifecycle
-[5] React Component Lifecycle | Web Development - CodePath Guides https://guides.codepath.org/webdev/React-Component-Lifecycle
-[6] The React Component Lifecycle - KIRUPA https://www.kirupa.com/react/component_lifecycle.htm
-[7] React Component Lifecycle: Methods and Hooks - Fireart Studio https://fireart.studio/blog/react-component-lifecycle-methods-and-hooks/
-[8] The React Lifecycle of a Functional Component - YouTube https://www.youtube.com/watch?v=Zz9pLellSQA
+1. React.Component https://legacy.reactjs.org/docs/react-component.html
+2. State and Lifecycle - React https://legacy.reactjs.org/docs/state-and-lifecycle.html
+3. React Lifecycle - W3Schools https://www.w3schools.com/react/react_lifecycle.asp
+4. React Component Lifecycle: A Deep Dive for Beginners https://www.fullstackfoundations.com/blog/react-component-lifecycle
+5. React Component Lifecycle | Web Development - CodePath Guides https://guides.codepath.org/webdev/React-Component-Lifecycle
+6. The React Component Lifecycle - KIRUPA https://www.kirupa.com/react/component_lifecycle.htm
+7. React Component Lifecycle: Methods and Hooks - Fireart Studio https://fireart.studio/blog/react-component-lifecycle-methods-and-hooks/
+8. The React Lifecycle of a Functional Component - YouTube https://www.youtube.com/watch?v=Zz9pLellSQA

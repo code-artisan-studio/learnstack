@@ -443,5 +443,5 @@ When `user.id` changes, React treats `ProfileForm` as a new instance, so local s
 
 ## Sources
 
-[1] Passing Props to a Component https://react.dev/learn/passing-props-to-a-component
-[2] Managing State https://react.dev/learn/managing-state
+1. Passing Props to a Component https://react.dev/learn/passing-props-to-a-component
+2. Managing State https://react.dev/learn/managing-state

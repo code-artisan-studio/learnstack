@@ -1,0 +1,8 @@
+{
+  "label": "dbt",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Notes on dbt (data build tool)."
+  }
+}
