@@ -233,7 +233,7 @@ claims_dbt:
       role: TRANSFORMER_DEV
       warehouse: DBT_DEV_WH
       database: ANALYTICS_DEV
-      schema: dbt_dkesavan # personal dev schema
+      schema: dbt_yourname # personal dev schema
       threads: 8
       query_tag: dbt_claims_dev
 ```

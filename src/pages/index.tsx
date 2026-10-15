@@ -60,12 +60,12 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Engineering notes"
-      description="Dharshan's engineering notes across React, .NET, databases, system design, Azure, DevOps and AI, kept for interview revision."
+      description="Engineering notes across React, .NET, databases, system design, Azure, DevOps and AI, kept for interview revision."
     >
       <main className={styles.page}>
         <header className={styles.intro}>
           <Heading as="h1" className={styles.title}>
-            Dharshan's engineering notes, kept for interview revision.
+            Engineering notes, kept for interview revision.
           </Heading>
           <p className={styles.lede}>
             {data.totalNotes} notes across {sorted.length} subjects

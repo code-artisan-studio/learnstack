@@ -11,7 +11,7 @@ import notesIndexPlugin from "./plugins/notes-index";
 const config: Config = {
   title: "Learnstack",
   tagline:
-    "My learning notes & interview prep — .NET, Azure, React, DevOps and beyond",
+    "Engineering notes and interview prep: .NET, Azure, React, DevOps and beyond",
   favicon: "img/favicon.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -24,7 +24,6 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: "/",
 
-  organizationName: "kesavanpotti-dharshan", // Usually your GitHub org/user name.
   projectName: "learnstack", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -80,8 +79,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          editUrl:
-            "https://github.com/kesavanpotti-dharshan/learnstack/tree/main/",
           showLastUpdateTime: true,
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
@@ -108,11 +105,6 @@ const config: Config = {
       items: [
         { to: "/docs/", label: "Notes", position: "left" },
         { to: "/career", label: "Career", position: "left" },
-        {
-          href: "https://github.com/kesavanpotti-dharshan/learnstack",
-          label: "GitHub",
-          position: "right",
-        },
       ],
     },
     footer: {
@@ -120,12 +112,8 @@ const config: Config = {
       links: [
         { label: "Notes", to: "/docs/" },
         { label: "Career", to: "/career" },
-        {
-          label: "Source on GitHub",
-          href: "https://github.com/kesavanpotti-dharshan/learnstack",
-        },
       ],
-      copyright: `© ${new Date().getFullYear()} Dharshan Kesavan Potti`,
+      copyright: `© ${new Date().getFullYear()} Learnstack`,
     },
     prism: {
       theme: prismThemes.oneLight,
