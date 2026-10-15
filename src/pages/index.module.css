@@ -1,161 +1,192 @@
 /**
- * Learnstack homepage styles — "Terminal Indigo"
+ * Homepage: a subject index. Each row's highlighter stroke is as long as
+ * the subject is deep (word count relative to the deepest subject).
  */
 
-.heroBanner {
-  position: relative;
-  padding: 6rem 1rem 4rem;
-  text-align: center;
-  background: linear-gradient(
-    180deg,
-    rgba(91, 95, 239, 0.08) 0%,
-    transparent 100%
-  );
-  overflow: hidden;
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 6rem;
 }
 
-.heroBanner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(
-    circle,
-    rgba(91, 95, 239, 0.18) 1px,
-    transparent 1px
-  );
-  background-size: 22px 22px;
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 75%);
-  mask-image: linear-gradient(180deg, #000 0%, transparent 75%);
-  pointer-events: none;
+.intro {
+  max-width: 46rem;
 }
 
-.heroBanner > * {
-  position: relative;
-}
-
-.heroStat {
-  font-size: 0.85rem;
-  color: var(--ifm-color-emphasis-600);
-  margin: -1rem 0 2rem;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--ifm-color-primary);
-  margin-bottom: 0.75rem;
-}
-
-.heroTitle {
-  font-size: 3.2rem;
+.title {
+  font-size: clamp(2.25rem, 5.5vw, 4.25rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  margin-bottom: 1rem;
+  font-variation-settings: "wdth" 78;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  max-width: 19ch;
+  margin-bottom: 1.5rem;
 }
 
-.heroSubtitle {
+.lede {
+  font-family: var(--ls-font-read);
   font-size: 1.15rem;
-  color: var(--ifm-color-emphasis-700);
-  max-width: 560px;
-  margin: 0 auto 2rem;
+  line-height: 1.65;
+  color: var(--ls-graphite);
+  max-width: 52ch;
+  margin-bottom: 2rem;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+.cta {
+  display: inline-block;
+  padding: 0.7rem 1.25rem;
+  border-radius: 4px;
+  background: var(--ls-ink);
+  color: var(--ls-paper);
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.topicSection {
-  padding: 3rem 1rem 5rem;
+.cta:hover {
+  background: var(--ls-highlighter);
+  color: var(--ls-highlighter-ink);
+  text-decoration: none;
 }
 
 .sectionTitle {
-  text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 2.5rem;
+  margin: 4.5rem 0 0;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--ls-ink);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ls-graphite);
 }
 
-.grid {
+.index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.25rem;
-  max-width: 1100px;
-  margin: 0 auto;
+  grid-template-columns: 15rem minmax(0, 1fr) 19rem 8.5rem;
+  grid-template-areas: "title description depth note";
+  align-items: baseline;
+  column-gap: 1.5rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--ls-rule);
+  color: inherit;
+  text-decoration: none;
 }
 
-.card {
+.row:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.row:hover .rowTitle {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+.rowTitle {
+  grid-area: title;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variation-settings: "wdth" 80;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+
+.rowDescription {
+  grid-area: description;
+  font-family: var(--ls-font-read);
+  font-size: 0.95rem;
+  color: var(--ls-graphite);
+}
+
+.rowDepth {
+  grid-area: depth;
   position: relative;
   display: block;
-  padding: 1.75rem;
-  border-radius: 12px;
-  border: 1px solid var(--ifm-color-emphasis-200);
-  background: var(
-    --ifm-background-surface-color,
-    var(--ifm-card-background-color)
-  );
-  text-decoration: none !important;
-  color: inherit;
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    border-color 0.15s ease;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 10px 24px rgba(91, 95, 239, 0.15);
-  color: inherit;
-}
-
-.cardEmoji {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  font-size: 1.4rem;
-  border-radius: 10px;
-  background: rgba(91, 95, 239, 0.12);
-  margin-bottom: 1rem;
-}
-
-.cardBadge {
+.stroke {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #fff;
-  background: var(--ifm-color-primary);
-  padding: 0.15rem 0.5rem;
-  border-radius: 999px;
+  left: 0;
+  top: 50%;
+  height: 1.3em;
+  width: calc(var(--depth) * 100%);
+  min-width: 3px;
+  background: var(--ls-highlighter);
+  border-radius: 3px 10px 4px 12px / 6px 4px 8px 5px;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  animation: draw 700ms cubic-bezier(0.2, 0.7, 0.2, 1) var(--delay) both;
 }
 
-.cardTitle {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  color: var(--ifm-heading-color);
-}
-
-.cardDescription {
-  font-size: 0.9rem;
-  color: var(--ifm-color-emphasis-700);
-  margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .heroTitle {
-    font-size: 2.2rem;
+@keyframes draw {
+  from {
+    transform: translateY(-50%) scaleX(0);
   }
-  .heroBanner {
-    padding: 4rem 1rem 2.5rem;
+}
+
+.rowCount {
+  position: relative;
+  padding-left: 0.45rem;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.rowUpdated,
+.rowOutline {
+  grid-area: note;
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.rowUpdated {
+  color: var(--ls-graphite);
+}
+
+.rowOutline {
+  color: var(--ls-red-pen);
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stroke {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .row {
+    grid-template-columns: minmax(0, 1fr) 17rem 8rem;
+    grid-template-areas:
+      "title depth note"
+      "description depth note";
+    row-gap: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .page {
+    padding: 2.5rem 1rem 4rem;
+  }
+
+  .row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "title note"
+      "description description"
+      "depth depth";
+    row-gap: 0.45rem;
+  }
+
+  .rowTitle {
+    font-size: 1.3rem;
+  }
+
+  .rowDepth {
+    margin-top: 0.2rem;
   }
 }

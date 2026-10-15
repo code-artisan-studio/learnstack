@@ -1,127 +1,233 @@
 /**
- * Learnstack theme — "Terminal Indigo"
- * A cool indigo/violet primary with a slate neutral base —
- * reads as a modern dev-tool, not a default Docusaurus site.
- * Pairs well with a monospace-flavored code theme.
+ * Learnstack theme: "Study notebook"
+ * Navy ballpoint ink on cool paper. Highlighter yellow is only ever a
+ * background behind text (active nav item, <mark>), never a text color.
+ * Bricolage Grotesque for UI and headings, Literata for reading.
  */
 
-/* Light mode */
 :root {
-  --ifm-color-primary: #5b5fef;
-  --ifm-color-primary-dark: #3d41ec;
-  --ifm-color-primary-darker: #2d31ea;
-  --ifm-color-primary-darkest: #1e21c0;
-  --ifm-color-primary-light: #797df1;
-  --ifm-color-primary-lighter: #898cf3;
-  --ifm-color-primary-lightest: #b6b8f8;
+  --ls-paper: #f6f7f9;
+  --ls-surface: #ffffff;
+  --ls-ink: #1e2a47;
+  --ls-graphite: #5d6473;
+  --ls-rule: #dce0e7;
+  --ls-highlighter: #f2e35c;
+  --ls-highlighter-ink: #1e2a47;
+  --ls-red-pen: #c8322b;
+  --ls-bar: #1e2a47;
 
-  --ifm-code-font-size: 90%;
-  --ifm-font-family-base: 'Karla', system-ui, sans-serif;
-  --ifm-heading-font-family: 'Mulish', system-ui, sans-serif;
-  --ifm-font-family-monospace:
-    "JetBrains Mono", "Fira Code", SFMono-Regular, monospace;
-  --ifm-heading-font-weight: 800;
-  --ifm-heading-color: #1a1a2e;
+  --ls-font-ui: "Bricolage Grotesque", system-ui, sans-serif;
+  --ls-font-read: "Literata", Georgia, serif;
 
-  --ifm-navbar-background-color: #ffffff;
-  --ifm-navbar-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --ifm-color-primary: #2f55b8;
+  --ifm-color-primary-dark: #2a4da6;
+  --ifm-color-primary-darker: #28489c;
+  --ifm-color-primary-darkest: #213c80;
+  --ifm-color-primary-light: #4166c9;
+  --ifm-color-primary-lighter: #4c6ecc;
+  --ifm-color-primary-lightest: #6a88d5;
 
-  --docusaurus-highlighted-code-line-bg: rgba(91, 95, 239, 0.1);
+  --ifm-background-color: var(--ls-paper);
+  --ifm-background-surface-color: var(--ls-surface);
+  --ifm-font-color-base: var(--ls-ink);
+  --ifm-heading-color: var(--ls-ink);
+  --ifm-color-emphasis-600: var(--ls-graphite);
+  --ifm-toc-border-color: var(--ls-rule);
+  --ifm-hr-background-color: var(--ls-rule);
 
-  --ifm-card-border-radius: 10px;
-  --ifm-global-radius: 8px;
-  --ifm-alert-border-radius: 10px;
+  --ifm-font-family-base: var(--ls-font-ui);
+  --ifm-heading-font-family: var(--ls-font-ui);
+  --ifm-font-family-monospace: "JetBrains Mono", SFMono-Regular, Menlo, monospace;
+  --ifm-heading-font-weight: 700;
+  --ifm-code-font-size: 88%;
+
+  --ifm-navbar-background-color: var(--ls-paper);
+  --ifm-navbar-shadow: none;
+  --ifm-footer-background-color: var(--ls-paper);
+
+  --ifm-global-radius: 4px;
+  --ifm-card-border-radius: 6px;
+  --ifm-alert-border-radius: 4px;
+
+  --docusaurus-highlighted-code-line-bg: rgba(242, 227, 92, 0.35);
 }
 
-/* Dark mode */
 [data-theme="dark"] {
-  --ifm-color-primary: #8b8ef7;
-  --ifm-color-primary-dark: #6b6ff2;
-  --ifm-color-primary-darker: #5b5fef;
-  --ifm-color-primary-darkest: #3d41ec;
-  --ifm-color-primary-light: #a5a7f9;
-  --ifm-color-primary-lighter: #b6b8f8;
-  --ifm-color-primary-lightest: #d4d5fb;
+  --ls-paper: #151a26;
+  --ls-surface: #1c2232;
+  --ls-ink: #e4e8f0;
+  --ls-graphite: #a2a9b8;
+  --ls-rule: #2e3648;
+  --ls-highlighter: rgba(242, 227, 92, 0.3);
+  --ls-highlighter-ink: #f6f2cf;
+  --ls-red-pen: #f07a6f;
+  --ls-bar: #c9d2e6;
 
-  --ifm-background-color: #14141f;
-  --ifm-background-surface-color: #1b1b2b;
-  --ifm-navbar-background-color: #14141f;
+  --ifm-color-primary: #93abef;
+  --ifm-color-primary-dark: #7596ea;
+  --ifm-color-primary-darker: #6689e8;
+  --ifm-color-primary-darkest: #3a66e0;
+  --ifm-color-primary-light: #b1c2f4;
+  --ifm-color-primary-lighter: #c0cef6;
+  --ifm-color-primary-lightest: #e0e7fb;
 
-  --docusaurus-highlighted-code-line-bg: rgba(139, 142, 247, 0.15);
+  --docusaurus-highlighted-code-line-bg: rgba(242, 227, 92, 0.14);
 }
 
-/* Slightly tighter, punchier headings */
+/* Chrome: navbar and footer sit on the paper, separated by a rule. */
+.navbar {
+  border-bottom: 1px solid var(--ls-rule);
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.footer {
+  border-top: 1px solid var(--ls-rule);
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+/* Highlighter: used for the one thing you're looking at right now. */
+mark {
+  background: var(--ls-highlighter);
+  color: var(--ls-highlighter-ink);
+  padding: 0 0.15em;
+  border-radius: 2px;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--ls-highlighter);
+  color: var(--ls-highlighter-ink);
+  font-weight: 600;
+}
+
+.menu__link {
+  border-radius: 2px;
+}
+
+.table-of-contents__link--active {
+  color: var(--ls-ink);
+  font-weight: 600;
+}
+
+/* Inline code in the table of contents reads as plain text, not chips. */
+.table-of-contents code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.95em;
+}
+
+/* Reading column: serif body at a comfortable measure. */
+.markdown {
+  max-width: 72ch;
+  font-family: var(--ls-font-read);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown table,
+.markdown .tabs,
+.markdown .alert,
+.markdown details {
+  font-family: var(--ls-font-ui);
+}
+
 .markdown h1 {
-  font-size: 2.2rem;
+  font-size: 2.25rem;
+  font-weight: 800;
   letter-spacing: -0.02em;
+  font-variation-settings: "wdth" 85;
+  line-height: 1.1;
 }
 
 .markdown h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: -0.01em;
-  border-bottom: 1px solid var(--ifm-toc-border-color);
-  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
 }
 
-/* Cards (category index tiles) get a subtle lift on hover */
-.card {
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
+.markdown h3 {
+  font-size: 1.2rem;
 }
 
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(91, 95, 239, 0.15);
+.markdown code {
+  border: none;
+  background: var(--ifm-color-emphasis-100);
 }
 
-/* Code blocks: slightly rounder, tighter line height for scanning */
 div[class^="codeBlockContainer"] {
-  border-radius: 10px;
+  border-radius: 6px;
+  box-shadow: none;
+  border: 1px solid var(--ls-rule);
+  font-family: var(--ifm-font-family-monospace);
+  line-height: 1.5;
 }
 
-/* Tables: rounded container, tinted header, subtle row hover */
+/* Tables: plain ruled rows, header set apart by weight, not tint. */
 .markdown table {
   display: table;
-  border-collapse: separate;
-  border-spacing: 0;
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 10px;
-  overflow: hidden;
+  border-collapse: collapse;
+  font-size: 0.95rem;
 }
 
 .markdown table th,
 .markdown table td {
   border: none;
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
-}
-
-.markdown table tr:last-child td {
-  border-bottom: none;
+  border-bottom: 1px solid var(--ls-rule);
 }
 
 .markdown table thead tr {
-  background: rgba(91, 95, 239, 0.08);
+  background: none;
+  border-bottom: 2px solid var(--ls-ink);
 }
 
-.markdown table tbody tr:hover {
-  background: var(--ifm-color-emphasis-100);
+.markdown table tr:nth-child(2n) {
+  background: none;
 }
 
-/* Blockquotes: tinted with the primary color instead of default gray */
 .markdown blockquote {
-  border-left: 4px solid var(--ifm-color-primary);
-  background: rgba(91, 95, 239, 0.06);
-  border-radius: 0 8px 8px 0;
+  border-left: 3px solid var(--ls-ink);
+  color: var(--ls-graphite);
+  font-style: italic;
 }
 
-/* Sidebar: current page gets a tinted rounded chip, not just a color change */
-.menu__link--active:not(.menu__link--sublist) {
-  background: rgba(91, 95, 239, 0.12);
-  font-weight: 600;
+.theme-last-updated {
+  color: var(--ls-graphite);
+  font-style: normal;
 }
 
-/* Table of contents: bolden the active heading for faster scanning */
-.table-of-contents__link--active {
-  font-weight: 600;
+/* Category index tiles: quiet, no lift. */
+.card {
+  box-shadow: none;
+  border: 1px solid var(--ls-rule);
+  background: var(--ls-surface);
+}
+
+.card:hover {
+  border-color: var(--ls-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.footer__link-separator {
+  display: none;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin-bottom: 0.5rem;
 }

@@ -4,6 +4,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
+import notesIndexPlugin from "./plugins/notes-index";
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
@@ -55,7 +57,7 @@ const config: Config = {
       tagName: "link",
       attributes: {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&family=Mulish:wght@600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=JetBrains+Mono:wght@400;600&display=swap",
       },
     },
   ],
@@ -70,6 +72,8 @@ const config: Config = {
     },
   ],
 
+  plugins: [notesIndexPlugin],
+
   presets: [
     [
       "classic",
@@ -78,22 +82,11 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           editUrl:
             "https://github.com/kesavanpotti-dharshan/learnstack/tree/main/",
+          showLastUpdateTime: true,
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          editUrl:
-            "https://github.com/kesavanpotti-dharshan/learnstack/tree/main/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -114,8 +107,7 @@ const config: Config = {
       },
       items: [
         { to: "/docs/", label: "Notes", position: "left" },
-        { to: "/blog/", label: "Blog", position: "left" },
-        { href: "pathname:///career/", label: "Career", position: "left" },
+        { to: "/career", label: "Career", position: "left" },
         {
           href: "https://github.com/kesavanpotti-dharshan/learnstack",
           label: "GitHub",
@@ -124,21 +116,16 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
+      style: "light",
       links: [
+        { label: "Notes", to: "/docs/" },
+        { label: "Career", to: "/career" },
         {
-          title: "Links",
-          items: [
-            { label: "Notes", to: "/docs/" },
-            { label: "Blog", to: "/blog" },
-            {
-              label: "GitHub",
-              href: "https://github.com/kesavanpotti-dharshan/learnstack",
-            },
-          ],
+          label: "Source on GitHub",
+          href: "https://github.com/kesavanpotti-dharshan/learnstack",
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Dharshan — Learnstack`,
+      copyright: `© ${new Date().getFullYear()} Dharshan Kesavan Potti`,
     },
     prism: {
       theme: prismThemes.oneLight,

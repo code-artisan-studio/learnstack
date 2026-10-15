@@ -1,0 +1,222 @@
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 6rem;
+}
+
+.intro {
+  max-width: 46rem;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  font-weight: 800;
+  font-variation-settings: "wdth" 78;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+}
+
+.lede,
+.focus,
+.action,
+.closing {
+  font-family: var(--ls-font-read);
+  line-height: 1.65;
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--ls-graphite);
+  max-width: 56ch;
+  margin: 0;
+}
+
+/* Role tabs: plain text, selected one is highlighted like a note. */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--ls-ink);
+}
+
+.tab {
+  padding: 0.35rem 0.6rem;
+  border: none;
+  border-radius: 2px;
+  background: none;
+  color: var(--ls-graphite);
+  font: 600 1rem/1.3 var(--ls-font-ui);
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--ls-ink);
+}
+
+.tab[aria-selected="true"] {
+  background: var(--ls-highlighter);
+  color: var(--ls-highlighter-ink);
+}
+
+.panel {
+  padding-top: 2.5rem;
+}
+
+.roleName {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-variation-settings: "wdth" 80;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.focus {
+  font-size: 1.1rem;
+  max-width: 60ch;
+  margin-bottom: 2.5rem;
+}
+
+.block {
+  padding-top: 1.25rem;
+  margin-bottom: 2.5rem;
+  border-top: 1px solid var(--ls-rule);
+}
+
+.blockTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
+.level {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ls-graphite);
+  margin-bottom: 0.5rem;
+}
+
+.columns,
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.list li {
+  margin: 0.4rem 0;
+  max-width: 60ch;
+}
+
+.list li::marker {
+  color: var(--ls-graphite);
+}
+
+/* Roadmap is a real sequence: time spans lead each step. */
+.roadmap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--ls-graphite);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.goal {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.action {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.courses {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.courses li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--ls-rule);
+}
+
+.courseLabel {
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.courseLabel input {
+  accent-color: var(--ls-ink);
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(2px);
+}
+
+.courseName {
+  font-weight: 600;
+}
+
+.courseMeta {
+  display: block;
+  margin-left: 1.6rem;
+  color: var(--ls-graphite);
+  font-size: 0.9rem;
+}
+
+.courseDone .courseName {
+  color: var(--ls-graphite);
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.muted {
+  color: var(--ls-graphite);
+  font-size: 0.95rem;
+}
+
+.closing {
+  max-width: 60ch;
+  margin-top: 1rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--ls-ink);
+  font-style: italic;
+}
+
+@media screen and (max-width: 840px) {
+  .columns,
+  .grid,
+  .roadmap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .roadmap {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .page {
+    padding: 2.5rem 1rem 4rem;
+  }
+}
